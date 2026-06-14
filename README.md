@@ -20,7 +20,7 @@ and CORAL/MMD loss align source/target feature distributions.
 
 ## 2.PROJECT STRUCTURE
 --------------------------------------------------------------------------------
-
+```bash
   MAGEP/
   |-- test_main.py               Main entry: training + fine-tuning + evaluation
   |-- preprocssing/              Data preprocessing scripts
@@ -50,7 +50,7 @@ and CORAL/MMD loss align source/target feature distributions.
   |
   |-- save_model/                Saved trained model
   |-- save_result/               Saved evaluation metrics
-
+```bash
 
 ## 3.MODEL INPUTS
 --------------------------------------------------------------------------------
