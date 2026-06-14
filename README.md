@@ -65,11 +65,12 @@ produces the following tensors for each sample:
 ## 4.HOW TO RUN
 --------------------------------------------------------------------------------
 ### Requirements
+  ```bash
  - Python 3.8+
  - PyTorch (CUDA recommended)
  - scipy, numpy, pandas, scikit-learn, matplotlib, tqdm
  - PLINK (for genotype QC preprocessing only)
-
+  ```
 ### Data Preprocessing
   Place raw data files and edit file paths in preprocessing scripts as needed.
   Run preprocessing scripts in the following order:
@@ -81,6 +82,7 @@ produces the following tensors for each sample:
   ```
 ### Output
   After training completes, the following files are generated:
+  ```bash
   {save_dir}/{model}/
     source_reptile_pretrain.pth   Stage 1 checkpoint
     best_da_model.pth             Best model from adversarial domain adaptation fine-tuning
@@ -88,3 +90,4 @@ produces the following tensors for each sample:
   {save_result}/{model}/
     Result.csv              predictions results (raw + predicted)
     metrics.csv             Summary metrics (RMSE, MAE, PCC)
+  ```
