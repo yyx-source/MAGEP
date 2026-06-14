@@ -1,10 +1,10 @@
 #  MAGEP -- A meta-learning with adversarial domain adaptation method for few-shot cross-region maize height and yield joint prediction
 
 ## Contents
-- [Overview](#1.OVERVIEW)
-- [Project structure](#2.PROJECT-STRUCTURE)
-- [Model inputs](#3.MODEL-INPUTS)
-- [How ro run](#4.HOW-TO-RUN)
+- [1.OVERVIEW](#Overview)
+- [2.PROJECT-STRUCTURE](#Project structure)
+- [3.MODEL-INPUTS](#Model inputs)
+- [4.HOW-TO-RUN](#How ro run)
 
 ## 1.OVERVIEW
 --------------------------------------------------------------------------------
