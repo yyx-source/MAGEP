@@ -2,9 +2,9 @@
 
 ## Contents
 - [1.OVERVIEW](#Overview)
-- [2.PROJECT-STRUCTURE](#Project structure)
-- [3.MODEL-INPUTS](#Model inputs)
-- [4.HOW-TO-RUN](#How ro run)
+- [2.PROJECT-STRUCTURE](#Project-structure)
+- [3.MODEL-INPUTS](#Model-inputs)
+- [4.HOW-TO-RUN](#How-ro-run)
 
 ## 1.OVERVIEW
 --------------------------------------------------------------------------------
