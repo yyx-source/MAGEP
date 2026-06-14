@@ -1,7 +1,7 @@
-  MAGEP -- A meta-learning with adversarial domain adaptation method for
-      few-shot cross-region maize height and yield joint prediction
+#  MAGEP -- A meta-learning with adversarial domain adaptation method for
+#      few-shot cross-region maize height and yield joint prediction
 
-1. OVERVIEW
+## 1. OVERVIEW
 --------------------------------------------------------------------------------
 
 MAGEP predicts crop phenotypes (plant height and grain yield) from genotype
@@ -13,7 +13,7 @@ fuses them through a gating interaction module, and predicts two phenotypic
 traits simultaneously. A Gradient Reversal Layer (GRL) with a domain classifier
 and CORAL/MMD loss align source/target feature distributions.
 
-2. PROJECT STRUCTURE
+## 2. PROJECT STRUCTURE
 --------------------------------------------------------------------------------
 
   MAGEP/
@@ -47,7 +47,7 @@ and CORAL/MMD loss align source/target feature distributions.
   |-- save_result/               Saved evaluation metrics
 
 
-3. MODEL INPUTS
+## 3. MODEL INPUTS
 --------------------------------------------------------------------------------
 The GEPDataset class (model/dataset.py) loads per-location CSV files and
 produces the following tensors for each sample:
@@ -57,28 +57,29 @@ produces the following tensors for each sample:
   y_norm   -- Normalized phenotype targets
   y_raw    -- Raw phenotype values (used for evaluation)
 
-4. HOW TO RUN
+## 4. HOW TO RUN
 --------------------------------------------------------------------------------
-Prerequisites
+### Requirements
  - Python 3.8+
  - PyTorch (CUDA recommended)
  - scipy, numpy, pandas, scikit-learn, matplotlib, tqdm
  - PLINK (for genotype QC preprocessing only)
 
-Data Preprocessing
+### Data Preprocessing
   Place raw data files and edit file paths in preprocessing scripts as needed.
   Run preprocessing scripts in the following order:
 
-Training
+### Training
   Run the pipeline:
-    python test_main.py
-
-Output
+  ```bash
+  python test_main.py
+  ```
+### Output
   After training completes, the following files are generated:
-    {save_dir}/
+  {save_dir}/{model}/
     source_reptile_pretrain.pth   Stage 1 checkpoint
     best_da_model.pth             Best model from adversarial domain adaptation fine-tuning
 
-    {save_result}/
-    {name}_preds.csv              Per-sample predictions (raw + predicted)
-    metrics.csv                   Summary metrics (RMSE, MAE, PCC)
+  {save_result}/{model}/
+    Result.csv              predictions results (raw + predicted)
+    metrics.csv             Summary metrics (RMSE, MAE, PCC)
