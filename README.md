@@ -66,7 +66,7 @@ produces the following tensors for each sample:
 --------------------------------------------------------------------------------
 ### Requirements
   ```bash
- - Python 3.8+
+ - Python 3.10+
  - PyTorch (CUDA recommended)
  - scipy, numpy, pandas, scikit-learn, matplotlib, tqdm
  - PLINK (for genotype QC preprocessing only)
