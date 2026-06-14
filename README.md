@@ -2,10 +2,9 @@
 
 ## Contents
 - [Overview](#1.OVERVIEW)
-- [System Requirements](#system-requirements)
-- [Installation Guide](#installation-guide)
-- [Instructions for use](#Instructions-for-use)
-- [Demo Instructions](#demo-Instructions)
+- [Project structure](#2.PROJECT-STRUCTURE)
+- [Model inputs](#3.MODEL-INPUTS)
+- [How ro run](#4.HOW-TO-RUN)
 
 ## 1.OVERVIEW
 --------------------------------------------------------------------------------
