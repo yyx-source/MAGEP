@@ -50,7 +50,7 @@ and CORAL/MMD loss align source/target feature distributions.
   |
   |-- save_model/                Saved trained model
   |-- save_result/               Saved evaluation metrics
-```bash
+```
 
 ## 3.MODEL INPUTS
 --------------------------------------------------------------------------------
